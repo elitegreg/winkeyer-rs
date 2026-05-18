@@ -1,0 +1,16 @@
+[package]
+name = "winkeyer-rs"
+version = "0.1.0"
+edition = "2024"
+description = "Async Rust interface for K1EL WinKeyer 3 Morse/CW keyers"
+license = "MIT OR Apache-2.0"
+repository = ""
+
+[dependencies]
+thiserror = "2"
+tokio = { version = "1", features = ["io-util", "macros", "rt", "time"] }
+tokio-serial = "5"
+
+[dev-dependencies]
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["io-util", "io-std", "macros", "rt-multi-thread", "signal", "time"] }
